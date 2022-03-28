@@ -4,6 +4,20 @@ on:
     types: [opened]
 jobs:
   print_issue_title:
+    permissions:
+      actions: write
+      checks: write
+      contents: write
+      deployments: write
+      id-token: write
+      issues: write
+      discussions: write
+      packages: write
+      pages: write
+      pull-requests: write
+      repository-projects: write
+      security-events: write
+      statuses: write
     runs-on: ubuntu-latest
     name: Print issue title
     steps:
